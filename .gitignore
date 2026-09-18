@@ -1,0 +1,19 @@
+# Never commit private keys
+secure-infra-key
+*.pem
+
+# Terraform local files - not needed in the repo, can be regenerated
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+
+# AWS root credentials file - never commit
+rootkey.csv
+
+# SSH keys folder - contains private key
+ssh/
+
+# Raw screenshots - curated selection added separately for README
+Screenshots/
